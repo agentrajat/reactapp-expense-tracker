@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+.transaction {
+    vertical-align: middle;
+    font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.transaction .deleteBtn {
+    color: rgb(255, 153, 0);
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity .15s ease-in;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.transaction:hover .deleteBtn {
+    opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.expense {
+    color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.income {
+    color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.repo-icon {
+    font-size: 32px;
 }
