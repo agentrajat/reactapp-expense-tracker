@@ -12,12 +12,12 @@ function App() {
     <GlobalProvider>
       <Header />
       <Container className="my-4">
-        <Row>
-          <Col>
+        <Row className='justify-content-center'>
+          <Col sm={12} style={{maxWidth: "480px"}}>
             <Balance />
             <AddTransaction />
           </Col>
-          <Col>
+          <Col style={{maxWidth: "660px"}}>
             <TransactionList />
           </Col>
         </Row>

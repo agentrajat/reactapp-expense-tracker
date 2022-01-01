@@ -7,7 +7,7 @@ export const AddTransaction = () => {
     const { addTransaction } = useContext(GlobalContext);
 
     const [text, setText] = useState('');
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState(null);
     const [transactionType, setTransactionType] = useState(GLOBAL_VARIABLES.transaction.income);
 
     const onSubmit = e => {
@@ -21,7 +21,7 @@ export const AddTransaction = () => {
         }
         addTransaction(newTransaction);
         setText('');
-        setAmount(0);
+        setAmount(null);
     }
 
     const onTransactionTypeChange = e => {
